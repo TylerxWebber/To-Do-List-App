@@ -1,0 +1,27 @@
+#todo-list {
+    margin-top: 10px;
+}
+
+#todo-input {
+    margin-bottom: 5px;
+}
+.todo {
+    margin-bottom: 10px;
+    opacity: 0;
+    -webkit-animation: fadeIn .5s linear forwards;
+    -moz-animation: fadeIn .5s linear forwards;
+    animation: fadeIn .5s linear forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.nice-title {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: indianred;
+    margin-left: 196px;
+    margin-right: 196px;
+}
