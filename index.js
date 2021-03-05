@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var todoCount = 0;
     var addTodo = function() {
       var todoCol = document.createElement('div');
-      todoCol.setAttribute('class', 'col-xs-12 todo');
+      todoCol.setAttribute('class', 'col-xs-10 col-xs-offset-2 todo');
       var todoRow = document.createElement('div');
       todoRow.setAttribute('class', 'row');
       var removeButton = document.createElement('button');
@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         todoCount++;
       };
 
-      var h5 = document.createElement('h5');
-      h5.setAttribute('class', 'col-xs-8');
-      h5.innerHTML = todoInput.value;
-      todoRow.appendChild(h5);
+      var h4 = document.createElement('h4');
+      h4.setAttribute('class', 'col-xs-8');
+      h4.innerHTML = todoInput.value;
+      todoRow.appendChild(h4);
       todoRow.appendChild(removeButton);
       todoCol.appendChild(todoRow);
       todoList.appendChild(todoCol);
